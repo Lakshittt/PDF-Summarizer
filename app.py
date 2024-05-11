@@ -13,7 +13,7 @@ from langchain.chains.question_answering import load_qa_chain  # Function for lo
 
 # Initializing OpenAI language model
 
-openapi_key = ""
+# openapi_key = ""
 llm = OpenAI(openai_api_key=openapi_key, temperature=0)
 
 # Initializing text splitter
