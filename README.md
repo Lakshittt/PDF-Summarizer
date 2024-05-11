@@ -12,7 +12,6 @@ functionality based on the content of the documents.
 The system is built with the aim of summarising a PDF file uploaded by the user. This system was created using Streamlit, LangChain, and OpenAI frameworks.
 
 ## Preview
-To be able to see a preview of this system, please see the following link: https://pdf-summarizerr.streamlit.app/,  or check out the preview below.
 
 <img src="preview.png" width="100%" />
 
