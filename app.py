@@ -5,13 +5,11 @@ import streamlit as st  # Streamlit library for creating the user interface
 from langchain.embeddings.openai import OpenAIEmbeddings  # Module for embeddings using OpenAI language models
 import tempfile  # Module for handling temporary files
 import time  # Module for time-related operations
-from langchain import OpenAI, PromptTemplate, LLMChain  # Classes from Langchain library
+from langchain import OpenAI  # Classes from Langchain library
 from langchain.text_splitter import CharacterTextSplitter  # Class for splitting text into smaller chunks
 from langchain.document_loaders import PyPDFLoader  # Class for loading and splitting PDF documents
 from langchain.chains.summarize import load_summarize_chain  # Function for loading summarization chain
 from langchain.docstore.document import Document  # Class representing a document
-from langchain.vectorstores import FAISS  # Class for vector indexing and similarity search
-from langchain.chains.question_answering import load_qa_chain  # Function for loading question-answering chain
 
 # Initializing OpenAI language model
 
