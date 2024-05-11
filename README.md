@@ -30,7 +30,7 @@ OpenAI API
 In the lines of program code below, change ``OPENAI_API_KEY`` to match your OPENAI API KEY. 
 
 ```bash
-openai_api_key = os.getenv("OPENAI_API_KEY")
+openapi_key = "YOUR OPENAPI KEY"
 ```
 Clone the repository:
 ```bash
