@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 # Importing necessary libraries and modules
 import streamlit as st  # Streamlit library for creating the user interface
 from langchain.embeddings.openai import OpenAIEmbeddings  # Module for embeddings using OpenAI language models
@@ -13,8 +15,15 @@ from langchain.chains.question_answering import load_qa_chain  # Function for lo
 
 # Initializing OpenAI language model
 
-# openapi_key = ""
-llm = OpenAI(openai_api_key=openapi_key, temperature=0)
+dotenv_path = "openai.env"
+load_dotenv(dotenv_path)
+openai_api_key = os.getenv("OPENAI_API_KEY")
+if not openai_api_key:
+    raise ValueError(f"Unable to retrieve OPENAI_API_KEY from {dotenv_path}")
+else:
+    llm = OpenAI(openai_api_key=openai_api_key, temperature=0)
+    
+
 
 # Initializing text splitter
 text_splitter = CharacterTextSplitter(

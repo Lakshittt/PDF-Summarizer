@@ -13,6 +13,10 @@ The system is built with the aim of summarising a PDF file uploaded by the user.
 
 ## Preview
 To be able to see a preview of this system, please see the following link: https://pdf-summarizerr.streamlit.app/,  or check out the preview below.
+
+<img src="preview.png" width="100%" />
+
+
 ## Technologies used
 
 Python
